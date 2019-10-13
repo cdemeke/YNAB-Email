@@ -1,1 +1,1 @@
-# YNAB-Email-
+# YNAB-Email
