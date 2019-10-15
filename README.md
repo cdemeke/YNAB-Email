@@ -4,7 +4,7 @@ This is a Google App Script that allows you to generate an email based on your Y
 
 The end result will generate an email (as frequently as you'd like) that will look like:
 
-![screenshot of url text](images/sample-screenshot-email.png)
+<kbd>![screenshot of url text](images/sample-screenshot-email.png)</kbd>
 
 
 ## Setup
