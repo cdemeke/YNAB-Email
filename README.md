@@ -21,7 +21,7 @@ Once you have your YNAB variables you need to:
 
 1. Go to [script.google.com](http://script.google.com/)
 2. Sign in and create a new script.
-3. Paste in the copied code from [ynab-report-appscript.gs](scr/ynab-report-appscript.gs)
+3. Paste in the copied code from [ynab-report-appscript.gs](src/ynab-report-appscript.gs)
 4. Paste in the copied code from [email.html](src/email.html)
 5. In ynab-report-appscript.gs replace the following values with what you want:
   + accessToken
