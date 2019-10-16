@@ -24,17 +24,16 @@ Once you have your YNAB variables you need to:
 3. Paste in the copied code from [ynab-report-appscript.gs](src/ynab-report-appscript.gs)
 4. Paste in the copied code from [email.html](src/email.html)
 5. In ynab-report-appscript.gs replace the following values with what you want:
-  + accessToken
-  + budgetID
-  + recipientsTO
+    1. accessToken
+    2. budgetID
+    3. recipientsTO
 6. Run the script
-
-7. If you want to automate so it sends an email every week (or whenever) you can do so by
-  1. Visiting [script.google.com](http://script.google.com/)
-  2. Selecting "My Triggers"
-  3. Adding a trigger (bottom righthand button)
-  4. Select your settings (make sure to set "time based" for the event source)
-  + Here is my appscript settings:
+6. If you want to automate so it sends an email every week (or whenever) you can do so by
+    1. Visiting [script.google.com](http://script.google.com/)
+    2. Selecting "My Triggers"
+    3. Adding a trigger (bottom righthand button)
+    4. Select your settings (make sure to set "time based" for the event source)
+    5. Here is my appscript settings:
   ![screenshot of appscript settings](images/appscript-trigger-settings.png?raw=true "Title")
 
 
