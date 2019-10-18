@@ -4,8 +4,8 @@ function emailFunction() {
   var emailSubject = "YNAB Report";
 
   // Private Keys
-  accessToken = "";
-  budgetID = "";
+  accessToken = ""; //Add your YNAB developer access token
+  budgetID = ""; //Add your YNAB budget id
 
   // Get data from YNAB (specifically Categories & Spending)
   var categoriesData = get_ynab_categories(accessToken,budgetID)
@@ -23,6 +23,18 @@ function emailFunction() {
 
   // Send Email
   sendEmail(emailSubject, message, recipientsTO);
+}
+
+function fetch_ynab_data(accessToken, path){
+  const url = "https://api.youneedabudget.com/v1/" + path;
+  const options = {
+    "headers": {
+      "Authorization": "Bearer " + accessToken
+    }
+  };
+  const response = UrlFetchApp.fetch(url, options);
+  const data = JSON.parse(response.getContentText()).data;
+  return data;
 }
 
 function formatCurrency(symbol, amount) {
